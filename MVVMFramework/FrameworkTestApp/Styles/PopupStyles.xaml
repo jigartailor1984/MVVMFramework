@@ -1,0 +1,68 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FrameworkTestApp.Styles">
+    <Style x:Key="PopupHeaderTextStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="18pt"/>
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="PopupMessageTextStyle" TargetType="{x:Type Label}">
+        <!--Usually Person Name-->
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="12pt"/>
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="PopupMessageDetailTextStyle" TargetType="{x:Type Label}">
+        <!--Usually Error/Message Detail-->
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="10pt"/>
+        <Setter Property="Foreground" Value="#ffa500"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="PopupMessageDetailTextBlockStyle" TargetType="{x:Type TextBlock}">
+        <!--Usually Error/Message Detail-->
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="10pt"/>
+        <Setter Property="Foreground" Value="#ffa500"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+    <Style x:Key="PopupButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="10pt"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="Gray"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    <Style x:Key="PopupOKCancelButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="12pt"/>
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background" Value="#FF898987"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="PopupButtonTextBlockStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily" Value="HelveticaNeueLT Pro 47 LtCn"/>
+        <Setter Property="FontSize" Value="10pt"/>
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+
+</ResourceDictionary>

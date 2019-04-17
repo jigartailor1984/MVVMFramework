@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="FrameworkTestApp.Views.UserControls.Error.ErrorMessage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FrameworkTestApp.Views.UserControls.Error"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Opacity="1"  Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"></ColumnDefinition>
+                <ColumnDefinition Width="0*"></ColumnDefinition>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="1" Grid.Column="2" Content="{Binding Header}" Style="{StaticResource PopupHeaderTextStyle}" />
+            <Viewbox Grid.Row="1" Visibility="Collapsed" Grid.Column="0"   VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </Grid>
+
+        <TextBlock  Name="lblError" Grid.Row="3" Style="{StaticResource PopupMessageDetailTextBlockStyle}" Text="{Binding ErrorMessageText}" TextWrapping="Wrap" ></TextBlock>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Button Name="btnOk" Grid.Column="1" Content="OK" 
+                    MinHeight="30" MinWidth="80" Style="{StaticResource PopupOKCancelButtonStyle}" Command="{Binding OkCommand}" />
+        </Grid>
+    </Grid>
+</UserControl>
